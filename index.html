@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Photography</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('assets/images/jungle.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #c8e6c9; /* Soft mint text */
+        }
+        header {
+            background: rgba(8, 203, 86, 0.9); /* Dark jungle green with transparency */
+            color: white;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #20f52b; /* Brighter green on hover */
+        }
+        .hero {
+            background: rgba(10, 183, 79, 0.7);
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+        .hero h2, .hero p {
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: rgba(28, 82, 50, 0.9);
+            color: white;
+            padding: 30px 0 10px;
+            margin-top: 20px;
+            transition: background 0.3s ease-in-out;
+            font-family: Arial, sans-serif;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+        .footer-section h3 {
+            color: #20f52b;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            color: #c8e6c9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-section ul li a:hover {
+            color: #20f52b;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #20f52b;
+        }
+        .footer-section form input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 5px;
+            width: 70%;
+        }
+        .footer-section form button {
+            padding: 8px 15px;
+            background: #388e3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .footer-section form button:hover {
+            background: #30f43a;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 20px;
+        }
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        .footer-bottom a {
+            color: #c8e6c9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-bottom a:hover {
+            color: #20f52b;
+        }
+        footer:hover {
+            background: rgba(28, 82, 50, 0.95);
+        }
+        button {
+            background: #388e3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+        button:hover {
+            background: #30f43a;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wildlife Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Explore the Wild</h2>
+            <p>Capturing the beauty of nature through the lens.</p>
+            <button>Discover More</button>
+        </section>
+        
+        <section class="gallery">
+            <img src="elephant 2.jpg" alt="Elephant">
+            <img src="giraffe.jpg" alt="Giraffe">
+            <img src="monkey.jpg" alt="Monkey">
+            <img src="zebra.jpg" alt="Zebra">
+            <img src="elephant.jpg" alt="Elephant">
+            <img src="lion.jpg" alt="lion">
+            <img src="turtle.jpg" alt="Turtle">
+            <img src="buffalo.jpg" alt="buffalo">
+            <img src="seal.jpg" alt="seal">
+            <img src="horse.jpg" alt="horse">
+            <img src="giraffe 2.jpg" alt="more giraffe">
+            <img src="bear.jpg" alt="bear">
+            <img src="lemur.jpg" alt="striped monke">
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wildlife Photography. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Wildlife Photography website loaded successfully.");
+            let currentImage = 0;
+            const images = document.querySelectorAll('.gallery img');
+
+            function rotateImages() {
+                images[currentImage].style.display = 'none';
+                currentImage = (currentImage + 1) % images.length;
+                images[currentImage].style.display = 'block';
+                setTimeout(rotateImages, 3000);
+            }
+            
+            // Initialize all images as hidden except first one
+            images.forEach((img, index) => {
+                img.style.display = index === 0 ? 'block' : 'none';
+            });
+            
+            rotateImages();
+        });
+    </script>
+</body>
+</html>
